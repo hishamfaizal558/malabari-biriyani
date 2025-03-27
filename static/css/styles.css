@@ -1,0 +1,109 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('https://bonmasala.com/wp-content/uploads/2022/10/mutton-biriyani-recipe.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Container for content */
+  .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  /* Headings and Tagline */
+  .fancy-heading {
+    font-family: 'Great Vibes', cursive;
+    font-size: 56px;
+    color: #b02a37;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Form Styling */
+  .order-form-container {
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+  }
+  
+  select, input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  select:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #b02a37;
+    box-shadow: 0 0 8px rgba(176, 42, 55, 0.4);
+  }
+  
+  input[type="submit"] {
+    background-color: #b02a37;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #8e1e2d;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .fancy-heading {
+      font-size: 42px;
+    }
+  
+    .container {
+      padding: 30px;
+    }
+  }
+  
